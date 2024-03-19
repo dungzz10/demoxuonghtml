@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite App</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://necolas.github.io/normalize.css/8.0.1/normalize.css"
+    />
+    <link rel="stylesheet" href="style.scss" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <div class="header-inner">
+          <a href="" class="header__logo">
+            <img src="./assets/logo.svg" alt="" />
+          </a>
+          <div class="button-mobile"><button>=</button></div>
+          <nav class="main-menu">
+            <ul class="main-menu__list">
+              <li class="main-menu__item">
+                <a href="" class="main-menu__link">Home</a>
+              </li>
+              <li class="main-menu__item">
+                <a href="./shop.html" class="main-menu__link">Shop</a>
+              </li>
+              <li class="main-menu__item">
+                <a href="./detail.html" class="main-menu__link">About</a>
+              </li>
+              <li class="main-menu__item">
+                <a href="./checkout.html" class="main-menu__link">Contact</a>
+              </li>
+            </ul>
+          </nav>
+          <div class="header-items">
+            <div class="header-item-user">
+              <span><img src="./assets/icons/1.svg" /></span>
+            </div>
+            <div class="header-item-user">
+              <span><img src="./assets/icons/2.svg" /></span>
+            </div>
+            <div class="header-item-user">
+              <span><img src="./assets/icons/3.svg" /></span>
+            </div>
+            <div class="header-item-user">
+              <span><img src="./assets/icons/4.svg" /></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="breadcrumb">
+        <!-- Breadcrumbs -->
+        <div class="tong">
+          <a href="#">Home</a> › <a href="#">Shop</a> ›
+          <a href="#">Asgaard Sofa</a>
+        </div>
+      </section>
+
+      <section class="product">
+        <div class="product-gallery">
+          <!-- Thumbnail images -->
+          <div class="thumbnails">
+            <img
+              src="https://picsum.photos/id/16/665/250"
+              alt="Thumbnail 1"
+              class="thumbnail"
+            />
+            <img
+              src="https://picsum.photos/id/16/665/250"
+              alt="Thumbnail 2"
+              class="thumbnail"
+            />
+            <img
+              src="https://picsum.photos/id/16/665/250"
+              alt="Thumbnail 3"
+              class="thumbnail"
+            />
+            <!-- Additional thumbnails -->
+          </div>
+          <!-- Main product image -->
+          <div class="main-image">
+            <img src="https://picsum.photos/id/16/665/250" alt="Asgaard Sofa" />
+          </div>
+        </div>
+
+        <div class="product-details">
+          <h1>Asgaard Sofa</h1>
+          <div class="price-and-rating">
+            <span class="price">25.000.000đ</span>
+            <div class="rating">
+              <!-- Rating stars -->
+              <span class="star">&#9733;</span>
+              <span class="star">&#9733;</span>
+              <span class="star">&#9733;</span>
+              <span class="star">&#9733;</span>
+              <span class="star">&#9733;</span>
+              <span class="reviews-count">5 Customer Reviews</span>
+            </div>
+          </div>
+          <p class="description">
+            Setting the bar as one of the loudest speakers in its class, the
+            Kilburn is a compact, stout-hearted hero with a well-balanced audio
+            which boasts a clear midrange and extended highs for a sound.
+          </p>
+          <!-- Product size and color options -->
+          <div class="product-options">
+            <div class="sizes">
+              <!-- Size options -->
+              <span class="size-option">L</span>
+              <span class="size-option">XL</span>
+              <span class="size-option">XS</span>
+            </div>
+            <div class="colors">
+              <!-- Color options -->
+              <span class="color-option black"></span>
+              <span class="color-option blue"></span>
+              <span class="color-option yellow"></span>
+            </div>
+          </div>
+          <!-- Add to cart and quantity -->
+          <div class="purchase-options">
+            <div class="quantity-selector">
+              <button class="decrease">-</button>
+              <span class="quantity">1</span>
+              <button class="increase">+</button>
+            </div>
+            <button class="add-to-cart">Add To Cart</button>
+            <button class="compare">+ Compare</button>
+          </div>
+        </div>
+      </section>
+      <div class="tabbed-content">
+        <ul class="tabs">
+          <li class="tab active" data-content="description">Description</li>
+          <li class="tab" data-content="info">Additional Information</li>
+          <li class="tab" data-content="reviews">Reviews [5]</li>
+        </ul>
+        <div class="content">
+          <div class="content-item active" id="description">
+            <p>
+              Embodying the raw, wayward spirit of rock 'n' roll, the Kilburn
+              portable active stereo speaker... Lorem ipsum dolor sit amet,
+              consectetur adipisicing elit. Quis repellat, quo totam aliquid,
+              unde, exercitationem tempora commodi inventore impedit ea officiis
+              voluptatum nisi voluptatem praesentium accusantium cupiditate
+              animi iste ab.
+            </p>
+            <img src="https://picsum.photos/id/16/665/250" alt="Sofa" />
+          </div>
+          <div class="content-item" id="info">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo omnis
+            laborum facere quam iste non dignissimos veniam praesentium ipsam.
+            Reprehenderit, minus laborum. Repudiandae ipsam ut hic alias ipsum
+            quibusdam pariatur?
+          </div>
+          <div class="content-item" id="reviews">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis
+            quam, distinctio dolore soluta hic quisquam eos amet autem ex
+            magnam! Expedita recusandae facere corporis ea totam, doloribus
+            sequi rem similique.
+          </div>
+        </div>
+      </div>
+      <section class="related-products">
+        <h2>Related Products</h2>
+        <div class="products-grid">
+          <article class="product-item">
+            <img
+              src="https://picsum.photos/id/10/300/300"
+              alt="Syltherine Chair"
+            />
+            <h3>Syltherine</h3>
+            <p>Stylish cafe chair</p>
+            <span class="price new-price">2.500.000đ</span>
+            <span class="price old-price">3.500.000đ</span>
+            <span class="discount-badge">-30%</span>
+          </article>
+          <article class="product-item">
+            <img
+              src="https://picsum.photos/id/10/300/300"
+              alt="Syltherine Chair"
+            />
+            <h3>Syltherine</h3>
+            <p>Stylish cafe chair</p>
+            <span class="price new-price">2.500.000đ</span>
+            <span class="price old-price">3.500.000đ</span>
+            <span class="discount-badge">-30%</span>
+          </article>
+          <article class="product-item">
+            <img
+              src="https://picsum.photos/id/10/300/300"
+              alt="Syltherine Chair"
+            />
+            <h3>Syltherine</h3>
+            <p>Stylish cafe chair</p>
+            <span class="price new-price">2.500.000đ</span>
+            <span class="price old-price">3.500.000đ</span>
+            <span class="discount-badge">-30%</span>
+          </article>
+          <article class="product-item">
+            <img
+              src="https://picsum.photos/id/10/300/300"
+              alt="Syltherine Chair"
+            />
+            <h3>Syltherine</h3>
+            <p>Stylish cafe chair</p>
+            <span class="price new-price">2.500.000đ</span>
+            <span class="price old-price">3.500.000đ</span>
+            <span class="discount-badge">-30%</span>
+          </article>
+          <!-- Repeat for other products -->
+          <!-- ... -->
+        </div>
+        <button class="show-more">Show More</button>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-list">
+          <div class="footer-item">
+            <img src="./assets/logo.svg" alt="" />
+            <p class="footer__address">
+              400 University Drive Suite 200 Coral Gables, FL 33134 USA
+            </p>
+          </div>
+          <div class="footer-nav">
+            <div class="footer-item">
+              <h2 class="footer__title">Links</h2>
+              <ul class="footer-menu-list">
+                <li class="footer-menu-item">
+                  <a href="" class="footer-menu-link">Home</a>
+                </li>
+                <li class="footer-menu-item">
+                  <a href="" class="footer-menu-link">Shop</a>
+                </li>
+                <li class="footer-menu-item">
+                  <a href="" class="footer-menu-link">Blog</a>
+                </li>
+                <li class="footer-menu-item">
+                  <a href="" class="footer-menu-link">Contact</a>
+                </li>
+              </ul>
+            </div>
+            <div class="footer-item">
+              <h2 class="footer__title">Help</h2>
+              <ul class="footer-menu-list">
+                <li class="footer-menu-item">
+                  <a href="" class="footer-menu-link">Payment Options</a>
+                </li>
+                <li class="footer-menu-item">
+                  <a href="" class="footer-menu-link">Returns</a>
+                </li>
+                <li class="footer-menu-item">
+                  <a href="" class="footer-menu-link">Privacy Policies</a>
+                </li>
+                <li class="footer-menu-item">
+                  <a href="" class="footer-menu-link">Contact</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="footer-item">
+            <h2 class="footer__title">Newsletter</h2>
+            <form action="" class="newsletter">
+              <input
+                type="text"
+                class="newsletter__input"
+                placeholder="Enter Your Email Address"
+              />
+              <button class="newsletter__btn">Subscribe</button>
+            </form>
+          </div>
+        </div>
+        <p class="copyright">2023 furino. All rights reverved</p>
+      </div>
+    </footer>
+  </body>
+</html>
